@@ -169,8 +169,8 @@ class Solution {
     void heapify(vector<int>&q,int n ,int i)
     {
         int largest = i;
-        int l = 2 * i + 1;
-        int r = 2 * i + 2;
+        int l = 2 * i + 1;//计算左孩子节点
+        int r = 2 * i + 2;//计算右孩子节点
         if(l < n && q[l] > q[largest])largest = l;
         if(r < n && q[r] > q[largest])largest = r;
         if(largest != i)
