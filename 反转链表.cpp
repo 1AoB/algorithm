@@ -1,3 +1,4 @@
+```cpp
 /*
 题目地址:
 https://www.nowcoder.com/practice/75e878df47f24fdc9dc3e400ec6058ca?tpId=117&tqId=37777&rp=1&ru=/exam/oj&qru=/exam/oj&sourceUrl=%2Fexam%2Foj%3Fpage%3D1%26tab%3D%25E7%25AE%2597%25E6%25B3%2595%25E7%25AF%2587%26topicId%3D117&difficulty=undefined&judgeStatus=undefined&tags=&title=
@@ -37,3 +38,8 @@ class Solution {
         return a;//返回a就好
     }
 };
+```
+
+![在这里插入图片描述](https://img-blog.csdnimg.cn/4e09cf4f829d4fc680e4e3b54330176c.png)
+关于递归的做法:
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20779b5ecf4a4202835224b89381c760.png)
