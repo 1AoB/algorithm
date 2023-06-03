@@ -1,0 +1,36 @@
+https://leetcode-cn.com/problems/two-sum/
+```cpp
+/*class Solution {
+public:
+    vector<int> twoSum(vector<int>& nums, int target) {
+        int len = nums.size();
+        for(int i = 0 ; i < len-1 ; i ++)
+        {
+            for(int j = i+1 ; j <len ;j++)
+            {
+                if(nums[i] + nums[j] == target){
+                    return {i,j};
+                }
+            }
+        } 
+        return {};
+    }
+};*/
+class Solution {
+public:
+    vector<int> twoSum(vector<int>& nums, int target) {
+        int len = nums.size();
+        unordered_map<int,int>hash;
+        for(auto k = 0 ; k < len ;k++){
+            hash[nums[k]] = k;
+        }
+        for(int i = 0 ; i < len ;i ++)
+        {
+            if(hash.count(target-nums[i]) && i != hash[target-nums[i]]){
+                return {i,hash[target-nums[i]]};
+            }
+        }
+        return {};
+    }
+};
+```
